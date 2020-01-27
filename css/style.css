@@ -1,0 +1,24 @@
+
+
+footer {
+    display: flex;
+}
+.btn-add{
+    margin-top: 20px;
+    padding: 10px 40px;
+}
+.input-item{
+    margin-right: 50px;  
+}
+#sortName{
+    transition: all 1s;
+}
+#sortName.transform{
+        transform: rotate(180deg);
+}
+#sortPrice{
+    transition: all 1s;
+}
+#sortPrice.transform{
+        transform: rotate(180deg);
+}

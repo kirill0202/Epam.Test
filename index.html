@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Таблица</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-light bg-light">
+        <form class="form-inline">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" id="mySearch" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+
+        </form>
+    </nav>
+    <table class="table table-striped" id="myTable">
+        <thead>
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col"><button class="btn" id='sortName'><i class="fa fa-caret-up"
+                            aria-hidden="true"></i></button>Name</th>
+                <th scope="col"><button class="btn " id="sortPrice"><i class="fa fa-caret-up"
+                            aria-hidden="true"></i></button>Price</th>
+                <th scope="col">Count</th>
+                <th scope="col">Actions</th>
+            </tr>
+        </thead>
+        <tbody id="tableBody">
+
+        </tbody>
+
+    </table>
+    <footer>
+        <label class="input-item">
+            <div>
+                <p class="mb-0">Name</p>
+                <input id="Name" class="form-control mr-sm-2">
+            </div>
+
+        </label>
+        <label class="input-item">
+            <div>
+                <p class="mb-0">Price</p>
+                <input id="Price" class="form-control mr-sm-2">
+            </div>
+
+        </label>
+        <label class="input-item">
+            <div>
+                <p class="mb-0">Count</p>
+                <input id="Count" class="form-control mr-sm-2">
+            </div>
+        </label>
+        <div>
+            <button type="Add" id="addButton" class="btn btn-primary btn-add">Add</button>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="./javascript/javascript.js"></script>
+
+</body>
+
+</html>
